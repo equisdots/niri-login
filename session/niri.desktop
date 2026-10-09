@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Niri
+Comment=equisdots niri session
+Exec=niri-session
+Type=Application
+DesktopNames=niri
+# equisdots-niri-login
