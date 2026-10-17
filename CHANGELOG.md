@@ -6,6 +6,12 @@ All notable changes to `niri-login` are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- Documented that the entry runs `niri-session` (not the bare `niri` binary):
+  the session exports `XDG_CURRENT_DESKTOP=niri` and `NIRI_SOCKET`, which the
+  Quickshell shell uses to select the niri backend and the plugin paths.
+
 ## [0.1.0] - 2026-10-09
 
 First release: installs the niri Wayland session entry into a system-scanned

@@ -51,6 +51,11 @@ DesktopNames=niri
 The trailing comment is a marker: removal only ever deletes a file carrying it,
 so a distro-provided entry is never touched.
 
+`niri-session` also exports `XDG_CURRENT_DESKTOP=niri` and `NIRI_SOCKET` to the
+session processes. The Quickshell shell and the plugin deployment rely on those
+signals to select the niri backend/plugin paths, so start niri through this
+entry (or `niri-session` directly) rather than a bare `niri` binary.
+
 ## License
 
 MIT.
